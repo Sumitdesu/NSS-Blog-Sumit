@@ -1,25 +1,37 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
-    background: #4CAF50;
+    background: linear-gradient(to right, #4CAF50, #2E7D32);
     color: white;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -27,22 +39,65 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: #2E7D32;
+}
+
+/* Sections */
+main {
+    width: 80%;
+    margin: 20px auto;
 }
 
 section {
-    padding: 20px;
     background: white;
-    margin: 20px;
+    padding: 20px;
+    margin: 20px 0;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #2E7D32;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+/* Self-Care Tips List */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    background: #e8f5e9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     background: #4CAF50;
     color: white;
+    font-weight: bold;
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 20px;
 }
